@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:div="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Tron Light Cycle</title>
+    <link rel="stylesheet" href="css/tron.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/tron_client.js"></script>
+</head>
+<body>
+
+  <div id="profile">
+      <div id="loginToExisting">
+          <label for="username">Username:</label>
+          <input id="username"/>
+          <label for="password">Password:</label>
+          <input id="password"/>
+          <button id="login" onclick="login(document.getElementById('username').value, document.getElementById('password').value)">Login</button>
+          <button id="register" onclick="register(document.getElementById('username').value, document.getElementById('password').value )">Register</button>
+      </div>
+      <div id="showProfile">
+      </div>
+  </div>
+
+  <label for="challengeName"> Challenge:</label>
+  <input id = 'challengeName'/>
+  <button id = 'challenge' onclick = challenge(document.getElementById('challengeName').value)> Challenge </button>
+
+  <div style="width:900px">
+      <div id="userlist">
+          Online:
+          <ul id = 'onlinePlayers'>
+          </ul>
+      </div>
+
+      <canvas id="canvas">
+          Your browser does not support HTML5 canvas, sorry.
+      </canvas>
+  </div>
+
+  <div id = 'postScript'></div>
+  <script>
+      $(function(){tron.init()})
+  </script>
+</body>
+</html>

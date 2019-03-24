@@ -1,0 +1,16 @@
+#userlist {
+    float: right;
+}
+
+#showProfile {
+    display: none;
+}
+
+#profile {
+    margin-bottom: 1ex;
+    padding: 1ex;
+    border: 1pt solid grey;
+    border-radius: 4px;
+    background-color: #6495ED;
+    width: 900px;
+}
